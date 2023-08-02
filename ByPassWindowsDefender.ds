@@ -1,9 +1,5 @@
-REM Windows 10: Disable Windows Defender with Powershell
-REM Author: Judge2020
-REM author website: Judge2020.com
-REM video: https://youtu.be/XQyB_bKjbgU
-REM  
-REM let the HID enumerate
+REM
+REM By razifalah
 DELAY 2000
 GUI r
 DELAY 300

